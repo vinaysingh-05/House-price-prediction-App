@@ -1,0 +1,73 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter Notebook
+
+.ipynb_checkpoints/
+
+# Python cache
+
+.pytest_cache/
+.mypy_cache/
+
+# Streamlit
+
+.streamlit/secrets.toml
+
+# Environment variables
+
+.env
+.env.*
+
+# OS files
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+
+.vscode/
+.idea/
+
+# Model files
+
+*.pkl
+*.joblib
+
+# Data files
+
+*.csv
+*.xlsx
+*.xls
+
+# Logs
+
+*.log
+
+# Temporary files
+
+*.tmp
+*.temp
+
+# Build files
+
+build/
+dist/
+*.egg-info/
+
+# Local outputs
+
+outputs/
+results/
