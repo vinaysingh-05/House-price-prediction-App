@@ -41,16 +41,7 @@ desktop.ini
 .vscode/
 .idea/
 
-# Model files
 
-*.pkl
-*.joblib
-
-# Data files
-
-*.csv
-*.xlsx
-*.xls
 
 # Logs
 
@@ -67,7 +58,4 @@ build/
 dist/
 *.egg-info/
 
-# Local outputs
-
-outputs/
-results/
+.catboost_info/
