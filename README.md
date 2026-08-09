@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🏠 House Price Prediction AI
 
 <p align="center">
@@ -97,33 +96,6 @@ price
 
 ---
 
-# 🔍 Exploratory Data Analysis
-
-EDA is performed before model training to understand the dataset and identify useful patterns.
-
-### Analysis includes
-
-- Dataset structure
-- Data types
-- Missing values
-- Numerical distributions
-- Target distribution
-- Feature relationships
-- Correlation analysis
-- Outlier inspection
-
-### 📈 Visualizations
-
-- Histograms
-- Box plots
-- Scatter plots
-- Correlation heatmap
-- Distribution plots
-- Actual vs Predicted plots
-- Residual plots
-- Feature importance plots
-
----
 
 # 🤖 Machine Learning Models
 
@@ -166,29 +138,6 @@ CatBoost
 This broad comparison helps identify which family of algorithms works best for the dataset.
 
 ---
-
-# ⚙️ Preprocessing & Feature Scaling
-
-Models that are sensitive to feature magnitude use `StandardScaler`.
-
-```python
-from sklearn.preprocessing import StandardScaler
-
-scaler = StandardScaler()
-
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
-```
-
-The scaler is fitted **only on training data** to avoid data leakage.
-
-Tree-based algorithms generally do not require feature scaling.
-
----
-
-# 🔗 Machine Learning Pipeline
-
-The project uses Scikit-Learn pipelines to combine preprocessing and model training.
 
 ```text
 Input Features
@@ -238,86 +187,6 @@ Higher = Better
 
 ---
 
-# 🏆 Model Selection
-
-The performance of all models is stored in a results table:
-
-```text
-Model
-R² Score
-MAE
-RMSE
-```
-
-Example:
-
-```python
-results_df = (
-    pd.DataFrame(results)
-    .sort_values(by="R2 Score", ascending=False)
-    .reset_index(drop=True)
-)
-```
-
-The strongest model is selected by considering:
-
-```text
-High R²
-Low MAE
-Low RMSE
-Good validation performance
-Good generalization
-```
-
----
-
-# 🐱 CatBoost Regression
-
-CatBoost is one of the advanced boosting models evaluated in this project.
-
-```python
-from catboost import CatBoostRegressor
-
-model = CatBoostRegressor(
-    random_state=42,
-    verbose=0
-)
-```
-
-CatBoost builds an ensemble of decision trees sequentially, where later trees focus on improving previous errors.
-
-It is particularly useful for structured/tabular datasets.
-
----
-
-# 🎛️ Hyperparameter Tuning
-
-Promising models can be optimized using `RandomizedSearchCV`.
-
-### CatBoost search space
-
-```python
-param_grid = {
-    "iterations": [200, 500, 800],
-    "depth": [4, 6, 8, 10],
-    "learning_rate": [0.01, 0.05, 0.1],
-    "l2_leaf_reg": [1, 3, 5, 10]
-}
-```
-
-Example:
-
-```python
-search = RandomizedSearchCV(
-    model,
-    param_distributions=param_grid,
-    n_iter=5,
-    cv=3,
-    scoring="neg_root_mean_squared_error",
-    random_state=42,
-    n_jobs=-1
-)
-```
 
 If tuning gives nearly identical validation performance, additional tuning may not provide meaningful improvement.
 
@@ -557,63 +426,6 @@ HOUSE PRICE PREDICTION/
 └── README.md
 ```
 
-### 🚫 Ignored Generated Files
-
-```text
-__pycache__/
-catboost_info/
-.ipynb_checkpoints/
-```
-
-These files are generated during development/training and are not required by the deployed application.
-
----
-
-# ⚡ Installation & Setup
-
-## 1. Clone the Repository
-
-```bash
-git clone <YOUR_REPOSITORY_URL>
-cd "House Price Prediction"
-```
-
-## 2. Create Virtual Environment
-
-```bash
-python -m venv venv
-```
-
-## 3. Activate Environment
-
-### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-### macOS / Linux
-
-```bash
-source venv/bin/activate
-```
-
-## 4. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-# ▶️ Run the Application
-
-Start the Streamlit application:
-
-```bash
-streamlit run app.py
-```
-
 Then open the local URL shown in the terminal.
 
 ---
@@ -674,52 +486,7 @@ Then open the local URL shown in the terminal.
 ✓ Streamlit Deployment
 ```
 
----
 
-# 🚀 Future Improvements
-
-- [ ] FastAPI REST API
-- [ ] Docker deployment
-- [ ] Cloud deployment
-- [ ] SHAP explainability
-- [ ] Prediction history
-- [ ] Automated retraining
-- [ ] Model monitoring
-- [ ] CI/CD pipeline
-- [ ] MLOps integration
-- [ ] Database integration
-
----
-
-# 👨‍💻 Author
-
-## Vinay Kumar
-
-**B.Tech — Artificial Intelligence & Machine Learning**
-
-**Focus:** AI/ML • Machine Learning • Intelligent Applications
-
-### Project
-
-**🏠 House Price Prediction AI**
-
-An end-to-end machine learning project covering the complete journey:
-
-```text
-Raw Data
-   ↓
-Data Analysis
-   ↓
-Machine Learning
-   ↓
-Model Selection
-   ↓
-Optimization
-   ↓
-Deployment
-```
-
----
 
 <p align="center">
   <b>🏠 From Raw Data → 🤖 Machine Learning → ⚙️ Optimization → 🚀 Deployment</b>
@@ -729,5 +496,4 @@ Deployment
   Built with Python • Scikit-Learn • CatBoost • Streamlit
 </p>
 =======
-    
->>>>>>> 6d9a3ac62d4903a00c14061b8ea60197a4383e6b
+
