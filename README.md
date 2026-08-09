@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏠 House Price Prediction AI
 
 <p align="center">
@@ -727,3 +728,6 @@ Deployment
 <p align="center">
   Built with Python • Scikit-Learn • CatBoost • Streamlit
 </p>
+=======
+    
+>>>>>>> 6d9a3ac62d4903a00c14061b8ea60197a4383e6b
